@@ -124,10 +124,15 @@ select {
 }
 
 .select::after {
-  content: "\25BA";
   position: absolute;
   background: #ff6f47;
   top: 0;
   padding: 1rem;
   pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #ff6f47;
 }
